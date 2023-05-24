@@ -1,0 +1,570 @@
+/* start global rules */
+:root {
+    --main-color: #8E7754;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Small */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+.container {
+    margin: 0 auto;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+.flex-rule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    display: inline-block;
+    color: #fff;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    margin: 1.5rem auto;
+    font-size: 2rem;
+    color: gray;
+}
+
+p {
+    margin: 2rem auto;
+    font-size: 1.7rem;
+    color: gray;
+}
+
+i {
+    margin-right: 1rem;
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+/*start  mouse and circle animation */
+.mouse {
+    text-align: center;
+}
+
+.mouse .slider {
+    position: relative;
+    width: 40px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 20px;
+
+
+}
+
+.mouse .slider .circle {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: circle 1.5s linear infinite;
+
+
+
+}
+
+@keyframes circle {
+    from {
+
+        top: 10%;
+    }
+
+    to {
+        top: 50%;
+        opacity: 0;
+
+    }
+}
+
+/*end  mouse and circle animation */
+
+
+
+/* end global rules */
+
+header {
+    padding: 2rem 0;
+    background: url(./imgs/drew-coffman-1872.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+
+/* logo */
+header .container .logo img {
+    width: 20rem;
+}
+
+/* logo */
+
+header .container .logo-nav {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    background-color: #0000004f;
+    transform: translateX(-50%);
+    padding: 0 6rem;
+}
+
+header .container .logo-nav nav {
+    flex: 1;
+}
+
+header .container .logo-nav .main-ul {
+    justify-content: flex-end;
+}
+
+/* start dropdown menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    width: 20%;
+    visibility: hidden;
+}
+
+.dropdown-menu li a {
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    background-color: #403d38;
+    width: 100%;
+    transition: .2s;
+}
+
+.dropdown-menu li:hover a {
+    color: #fff;
+    background-color: #8E7754;
+}
+
+.special-li:hover .dropdown-menu {
+    visibility: visible;
+}
+
+/* end dropdown menu */
+
+/* header .container .logo-nav .main-ul>li>a {
+    padding: 1rem 2rem;
+} */
+
+header .container .logo-nav .main-ul>li>a:hover {
+    color: #8E7754;
+}
+
+header .container .logo-nav .main-ul>li>a {
+    font-size: 2rem;
+    color: #fff;
+    padding: 3.5rem 2rem;
+    transition: .2s;
+}
+
+header .container .logo-nav .main-ul .home {
+    position: relative;
+}
+
+header .container .logo-nav .main-ul .home::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 0;
+    background-color: var(--main-color);
+}
+
+/* end logo */
+/* end nav section */
+
+/* start  header description */
+header .family-bakery {
+    height: 60rem;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
+    color: #fff;
+}
+
+.family-bakery h4 {
+    font-size: 2rem;
+}
+
+.family-bakery h1 {
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+.family-bakery p {
+    font-size: 2.5rem;
+    min-width: 55%;
+    max-width: 85%;
+    text-align: center;
+    margin: 3.5rem auto;
+    color: #fff;
+}
+
+.family-bakery .btns a {
+    color: #fff;
+    margin-left: 2rem;
+    font-size: 2rem;
+    padding: 2rem;
+    border: none;
+    transition: .3s;
+
+}
+
+.family-bakery .btns .learn-more {
+    background-color: var(--main-color);
+    border-radius: .5rem;
+}
+
+.family-bakery .btns a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.family-bakery .btns .contact-us {
+    border-radius: .5rem;
+    border: 1px solid #fff;
+}
+
+/* start mouse animation */
+
+/* end mouse animation */
+/* end  header description */
+
+
+/* start who we are */
+
+.image {
+    height: 45rem;
+
+}
+
+.image img {
+    height: 100%
+}
+
+.description {
+    margin-left: 6rem;
+}
+
+.description p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    line-height: 2.5rem;
+}
+
+.description ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.description ul li {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* end  who we are */
+
+/* start our-location section */
+.our-location-description {
+    margin-right: 1.5rem;
+}
+
+/* end our-location section */
+
+/* start our banking  */
+.our-banking .container {
+    flex-direction: column;
+}
+
+.our-banking-heading {
+    text-align: center;
+}
+
+.our-banking .our-banking-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5rem;
+    width: 100%
+}
+
+.our-banking .our-banking-info .info {
+    text-align: center;
+}
+
+.our-banking .our-banking-info .info p {
+    margin-bottom: 3rem;
+}
+
+
+.our-banking .our-banking-info .info img {
+    max-width: 100%;
+    /* width: 20rem; */
+}
+
+/* end our banking  */
+/* start contact-information */
+.contact-information .description {
+    margin-left: 0;
+    margin-right: 6rem;
+}
+
+
+
+/* end contact-information */
+
+/* start footer */
+footer {
+    background-color: #403d38;
+}
+
+footer .footer-description .footer-info {
+    width: 22%;
+    height: 35rem;
+    margin-top: 5rem;
+    font-size: 1.7rem;
+}
+
+footer .footer-description .footer-info h3 {
+    color: #fff;
+}
+
+footer .footer-description .footer-info li {
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+footer .footer-description .footer-info li i {
+    font-size: 2rem;
+}
+
+footer .footer-description .footer-info ul li a {
+    color: gray;
+    transition: .5s;
+}
+
+footer .footer-description .footer-info ul li:hover a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.special {
+    content: "";
+    position: relative;
+    z-index: 3;
+}
+
+.special::before {
+    content: "";
+    background: url('./imgs/contact-details-map.png') no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.20;
+    z-index: -1;
+}
+
+
+
+/* start footer logo and social */
+
+.footer-logo-social {
+    text-align: center;
+    justify-content: center;
+    background-color: #353330;
+    min-height: 31rem;
+}
+
+.footer-logo-social p {
+    font-size: 2rem;
+}
+
+.footer-logo-social i {
+    color: gray;
+    transition: .5s;
+    font-size: 4rem;
+}
+
+.fa-facebook:hover {
+    color: #3b5998
+}
+
+.fa-google-plus:hover {
+    color: #dc4e41;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}
+
+/* end footer logo and social */
+
+/* end footer */
+
+/* start responsive  */
+
+/* toggle menu icon */
+.burger {
+    display: none;
+    z-index: 5;
+}
+
+/* toggle menu icon */
+
+@media (max-width:767px) {
+
+    .contact-information .container,
+    .our-location .container,
+    .footer-description,
+    .who-we-are .container {
+        flex-direction: column;
+    }
+
+    .logo-nav ul {
+        display: none;
+    }
+
+    .burger:hover ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+
+    }
+
+
+
+    .header .container .logo-nav nav {
+        flex: none;
+    }
+
+    header .container .logo-nav {
+        position: relative;
+        padding: 2rem;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .family-bakery {
+        height: 45rem;
+    }
+
+    .who-we-are .container .description p,
+    .our-location-description p,
+    .our-banking p,
+    .description p {
+        max-width: 90%;
+        font-size: 2rem;
+        margin: 1.8rem auto;
+    }
+
+
+    .description,
+    .our-location-description,
+    .contact-information .description,
+    .who-we-are .container .description {
+        margin: 2rem;
+
+    }
+
+    .our-banking .our-banking-info .info img {
+        max-width: 95%;
+    }
+
+    .image {
+        text-align: center;
+        height: auto;
+    }
+
+    .image img {
+        max-width: 95%;
+        height: fit-content;
+
+    }
+
+    iframe {
+        max-width: 95%;
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    body footer .footer-description .footer-info {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .footer-img img {
+        width: 25rem;
+    }
+}
+
+/* end responsive  */
